@@ -1,3 +1,21 @@
+h1 {
+  text-align: center;
+  margin: 50px auto;
+  font-size: 7vw;
+}
+
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .ring1 {
   border: 2.5px solid #ff7f94;
   border-radius: 50%;
@@ -62,17 +80,5 @@
           box-shadow: 2px 2px 3px #00007f;
   -webkit-transform: translateX(-375px);
           transform: translateX(-375px);
-}
-
-#main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 /*# sourceMappingURL=styles.css.map */

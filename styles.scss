@@ -1,3 +1,19 @@
+$color: rgb(255, 127, 255);
+$size: 50px;
+$sizeToTRanslate: 0;
+
+h1 {
+	text-align: center;
+	margin: 50px auto;
+	font-size: 7vw;
+}
+
+#main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 @mixin ring($color, $size) {
 	border: $size/20 solid $color;
 	border-radius: 50%;
@@ -5,10 +21,6 @@
 	height: $size;
 	box-shadow: $size/150 $size/150 $size/100 darken($color, 50);
 }
-
-$color: rgb(255, 127, 255);
-$size: 50px;
-$sizeToTRanslate: 0;
 
 @for $i from 1 through 6 {
 	$modifiedColor: adjust-hue($color, $i * 50);
@@ -18,9 +30,4 @@ $sizeToTRanslate: 0;
 		transform: translateX($sizeToTRanslate);
 		$sizeToTRanslate: $sizeToTRanslate - $modifiedSize / 2;
 	}
-}
-#main {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
